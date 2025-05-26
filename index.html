@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Responsive Sidebar + Dark Mode</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/remixicon@4.5.0/fonts/remixicon.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header>
+      <nav>
+        <div id="page_title">
+          <h5>Still Alive</h5>
+          <h3>Farhan Sadik</h3>
+        </div>
+
+        <div class="sidebar" id="sidebar">
+          <h2 class="nav-item active" data-page="Home">Home</h2>
+          <h2 class="nav-item" data-page="Projects">Projects</h2>
+          <h2 class="nav-item" data-page="Services">Services</h2>
+          <h2 class="nav-item" data-page="About">About</h2>
+          <h2 class="nav-item" data-page="Contact">Contact</h2>
+        </div>
+        <div class="controls">
+          <button id="darkToggle" aria-label="Toggle Dark Mode">
+            <i class="ri-moon-line" id="moonIcon"></i>
+            <i class="ri-sun-line" id="sunIcon" style="display: none"></i>
+          </button>
+          <button id="menu">☰</button>
+          <button id="close"><i class="ri-close-large-line"></i></button>
+        </div>
+      </nav>
+    </header>
+
+    <section class="Home">
+      <!-- <h1>Welcome to Home</h1> -->
+      <div class="h_container">
+        <div class="h_c_wrapper">
+          <div class="h_b_i_wrapper">
+            <img
+              src="images/amst.png"
+              alt=""
+              class="h_img"
+            />
+          </div>
+          <div class="h_blur"></div>
+        </div>
+        <div class="h_t_wrapper">
+          <div class="h_row">
+            <h2 class="h_title">FARHAN SADIK</h2>
+          </div>
+          <div class="h_row_2">
+            <h2 class="h_title">FARHAN SADIK</h2>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="Projects">
+      <h1>Welcome to Projects</h1>
+    </section>
+
+    <section class="Services">
+      <h1>Welcome to Services</h1>
+    </section>
+
+    <section class="About">
+      <h1>This is the About Section</h1>
+    </section>
+
+    <section class="Contact">
+      <h1>Welcome to Contact</h1>
+    </section>
+
+    <script src="app.js"></script>
+  </body>
+</html>
