@@ -52,7 +52,7 @@ navItems.forEach((item) => {
     });
 
     if (target) {
-      document.querySelector("." + target).style.display = "flex";
+      document.querySelector("." + target).style.display = "block";
     }
 
     // Highlight active nav
