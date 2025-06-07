@@ -12,145 +12,211 @@
   </head>
   <body>
     <header>
-      <nav>
-        <div id="page_title">
-          <h5>Still Alive</h5>
-          <h3>Farhan Sadik</h3>
-        </div>
-
-        <div class="sidebar" id="sidebar">
-          <h2 class="nav-item active" data-page="Home">Home</h2>
-          <h2 class="nav-item" data-page="Projects">Projects</h2>
-          <h2 class="nav-item" data-page="Services">Services</h2>
-          <h2 class="nav-item" data-page="About">About</h2>
-          <h2 class="nav-item" data-page="Contact">Contact</h2>
-        </div>
-        <div class="controls">
-          <button id="darkToggle" aria-label="Toggle Dark Mode">
-            <i class="ri-moon-line" id="moonIcon"></i>
-            <i class="ri-sun-line" id="sunIcon" style="display: none"></i>
-          </button>
-          <button id="menu">☰</button>
-          <button id="close"><i class="ri-close-large-line"></i></button>
-        </div>
-      </nav>
+      <nav></nav>
     </header>
 
-    <!-- Home -->
-    <section class="Home">
-      <!-- home container  -->
-      <div class="h_wrapper">
-        <div class="h_container">
-          <div class="h_c_wrapper">
-            <div class="h_b_i_wrapper">
-              <img src="images/amst.png" alt="" class="h_img" />
-            </div>
-            <div class="h_blur"></div>
+    <main>
+      <!-- Home -->
+      <section id="Home">
+        <div class="home_container">
+          <div class="home_img_container">
+            <img src="images/amst.png" alt="farhan img" class="home_img" />
           </div>
-          <div class="h_t_wrapper">
-            <div class="h_row">
-              <h2 class="h_title">FARHAN SADIK</h2>
-            </div>
-            <div class="h_row_2">
-              <h2 class="h_title">FARHAN SADIK</h2>
+          <div class="home_text_container">
+            <div class="blur"></div>
+            <div class="home_text">
+              <h1>FARHAN SADIK</h1>
             </div>
           </div>
         </div>
-      </div>
+      </section>
 
-      <!-- home projects  -->
-      <div class="h_projects">
-        <h2>Explore My Top Projects</h2>
-        <div class="h_projects_container">
-          <hr class="hr1" />
-          <div class="p_card">
-            <div class="p_content">
-              <img src="images/recipe-d.png" alt="" />
-              <div class="p_c">
-                <h3>Code & Cook</h3>
-                <p>
-                  A unique web app that combines coding tutorials with cooking
-                  recipes. Built using HTML, CSS, and JavaScript.
-                </p>
-                <a
-                  href="https://github.com/master-farhan/recipe"
-                  target="_blank"
-                  >View Code</a
-                >
-                <a
-                  href="https://master-farhan.github.io/recipe/"
-                  target="_blank"
-                  >Live Demo</a
-                >
-              </div>
-            </div>
+      <!-- About -->
+      <section id="About">
+        <h2>About Me</h2>
+        <div class="about_container">
+          <!-- left -->
+          <div class="about_left">
+            <h3>
+              Hi, I'm Farhan Sadik, <br />
+              a frontend web developer from Bangladesh.
+            </h3>
+            <p>
+              I enjoy creating websites that look good and work well on all
+              devices. I work with HTML, CSS, JavaScript, React.js, Redux and
+              Tailwind CSS to build modern and clean user interfaces.
+            </p>
+            <br />
+            <p>
+              I'm always learning new things to improve my skills and stay up to
+              date with the latest web technologies. I like solving problems,
+              building cool features, and making websites fast and easy to use.
+            </p>
+            <br />
+            <p>
+              Right now, I'm focused on growing as a developer and working on
+              projects that help me learn and improve.
+            </p>
+            <br />
+            <br />
+            <h3>My main skills include:</h3>
+            <ul>
+              <li>HTML & CSS - for creating clean and structured web pages</li>
+              <li>
+                JavaScript - for adding interactivity and dynamic features
+              </li>
+              <li>React.js - for building fast and scalable user interfaces</li>
+              <li>
+                Redux - for managing complex application state effectively
+              </li>
+              <li>
+                Tailwind CSS - for writing efficient and responsive styles
+                quickly
+              </li>
+            </ul>
           </div>
-          <hr class="hr2" />
-          <div class="p_card p_card2">
-            <div class="p_content">
-              <img src="images/recipe-d.png" alt="" />
-              <div class="p_c">
-                <h3>Code & Cook</h3>
-                <p>
-                  A unique web app that combines coding tutorials with cooking
-                  recipes. Built using HTML, CSS, and JavaScript.
-                </p>
-                <a
-                  href="https://github.com/master-farhan/recipe"
-                  target="_blank"
-                  >View Code</a
-                >
-                <a
-                  href="https://master-farhan.github.io/recipe/"
-                  target="_blank"
-                  >Live Demo</a
-                >
+          <!-- right -->
+          <div class="about_right">
+            <h3>My Dev Stack</h3>
+            <div class="skills_grid">
+              <div class="skill_card">
+                <h4>HTML & CSS</h4>
+                <div class="skill_line"><span>87%</span></div>
               </div>
-            </div>
-          </div>
-          <hr class="hr3" />
-          <div class="p_card">
-            <div class="p_content">
-              <img src="images/recipe-d.png" alt="" />
-              <div class="p_c">
-                <h3>Code & Cook</h3>
-                <p>
-                  A unique web app that combines coding tutorials with cooking
-                  recipes. Built using HTML, CSS, and JavaScript.
-                </p>
-                <a
-                  href="https://github.com/master-farhan/recipe"
-                  target="_blank"
-                  >View Code</a
-                >
-                <a
-                  href="https://master-farhan.github.io/recipe/"
-                  target="_blank"
-                  >Live Demo</a
-                >
+              <div class="skill_card">
+                <h4>JavaScript</h4>
+                <div class="skill_line skill_line2"><span>73%</span></div>
+              </div>
+              <div class="skill_card">
+                <h4>React.js</h4>
+                <div class="skill_line skill_line3"><span>59%</span></div>
+              </div>
+              <div class="skill_card">
+                <h4>Redux</h4>
+                <div class="skill_line skill_line4"><span>46%</span></div>
+              </div>
+              <div class="skill_card">
+                <h4>Tailwind CSS</h4>
+                <div class="skill_line skill_line5"><span>91%</span></div>
               </div>
             </div>
           </div>
         </div>
-      </div>
-    </section>
+      </section>
 
-    <!-- Projects -->
-    <section class="Projects">
-      <h2>My Projects</h2>
-    </section>
+      <!-- Services -->
+      <section id="Services">
+        <h2>Welcome to Services</h2>
+      </section>
 
-    <section class="Services">
-      <h1>Welcome to Services</h1>
-    </section>
+      <!-- Projects -->
+      <section id="Projects">
+        <h2>My Projects</h2>
+        <div class="projects_container">
+          <!-- card -->
+          <div class="projects_card">
+            <div class="card_img_container">
+              <img class="card_img" src="images/recipe-d.png" alt="" />
+              <div class="card_link">
+                <a href="#" target="_blank" rel="noopener noreferrer">
+                  <i class="ri-arrow-right-up-line"></i>
+                </a>
+                <a href="#" target="_blank" rel="noopener noreferrer">
+                  <i class="ri-github-line"></i>
+                </a>
+              </div>
+            </div>
+            <div class="card_text">
+              <h3>Code & Cook</h3>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil
+                fugit eligendi ducimus labore! Nesciunt illo blanditiis laborum
+                ratione inventore omnis consequuntur temporibus sapiente vel
+                repudiandae, quibusdam quod provident ex minus.
+              </p>
+              <p><span>React JS</span> <span>Tailwind CSS</span></p>
+            </div>
+          </div>
 
-    <section class="About">
-      <h1>This is the About Section</h1>
-    </section>
+          <div class="projects_card">
+            <div class="card_img_container">
+              <img class="card_img" src="images/recipe-d.png" alt="" />
+              <div class="card_link">
+                <a href="#" target="_blank" rel="noopener noreferrer"
+                  ><i class="ri-arrow-right-up-line"></i
+                ></a>
+                <a href="#" target="_blank" rel="noopener noreferrer"
+                  ><i class="ri-github-line"></i
+                ></a>
+              </div>
+            </div>
+            <div class="card_text">
+              <h3>Code & Cook</h3>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil
+                fugit eligendi ducimus labore! Nesciunt illo blanditiis laborum
+                ratione inventore omnis consequuntur temporibus sapiente vel
+                repudiandae, quibusdam quod provident ex minus.
+              </p>
+              <p><span>React JS</span> <span>Tailwind CSS</span></p>
+            </div>
+          </div>
 
-    <section class="Contact">
-      <h1>Welcome to Contact</h1>
-    </section>
+          <div class="projects_card">
+            <div class="card_img_container">
+              <img class="card_img" src="images/recipe-d.png" alt="" />
+              <div class="card_link">
+                <a href="#" target="_blank" rel="noopener noreferrer"
+                  ><i class="ri-arrow-right-up-line"></i
+                ></a>
+                <a href="#" target="_blank" rel="noopener noreferrer"
+                  ><i class="ri-github-line"></i
+                ></a>
+              </div>
+            </div>
+            <div class="card_text">
+              <h3>Code & Cook</h3>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil
+                fugit eligendi ducimus labore! Nesciunt illo blanditiis laborum
+                ratione inventore omnis consequuntur temporibus sapiente vel
+                repudiandae, quibusdam quod provident ex minus.
+              </p>
+              <p><span>React JS</span> <span>Tailwind CSS</span></p>
+            </div>
+          </div>
+
+          <div class="projects_card">
+            <div class="card_img_container">
+              <img class="card_img" src="images/recipe-d.png" alt="" />
+              <div class="card_link">
+                <a href="#" target="_blank" rel="noopener noreferrer"
+                  ><i class="ri-arrow-right-up-line"></i
+                ></a>
+                <a href="#" target="_blank" rel="noopener noreferrer"
+                  ><i class="ri-github-line"></i
+                ></a>
+              </div>
+            </div>
+            <div class="card_text">
+              <h3>Code & Cook</h3>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil
+                fugit eligendi ducimus labore! Nesciunt illo blanditiis laborum
+                ratione inventore omnis consequuntur temporibus sapiente vel
+                repudiandae, quibusdam quod provident ex minus.
+              </p>
+              <p><span>React JS</span> <span>Tailwind CSS</span></p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Contact -->
+      <section id="Contact">
+        <h2>Welcome to Contact</h2>
+      </section>
+    </main>
 
     <script src="app.js"></script>
   </body>
