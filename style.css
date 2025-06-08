@@ -294,15 +294,26 @@ main {
 #Services {
   padding: 40px 4vw;
   margin-top: 70px;
+  width: 100%;
 }
 
 .service_container {
+  width: 100%;
   display: flex;
   align-items: center;
   justify-content: space-between;
   flex-direction: column;
-  gap: 30px;
+  gap: 20px;
   padding-top: 30px;
+}
+.s_s,
+.s_f {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: column;
+  gap: 20px;
 }
 .services {
   background: var(--bg-2);
@@ -311,7 +322,6 @@ main {
   border-radius: 10px;
   display: flex;
   align-items: center;
-  /* flex-direction: column; */
   gap: 10px;
 }
 .services i {
@@ -332,10 +342,6 @@ main {
 @media (min-width: 1020px) {
   .service_container {
     flex-direction: row;
-    flex-wrap: wrap;
-  }
-  .services {
-    width: 48%;
   }
   .service_text h3 {
     font-size: 1.7rem;
