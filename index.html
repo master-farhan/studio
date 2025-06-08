@@ -46,7 +46,7 @@
               devices. I work with HTML, CSS, JavaScript, React.js, Redux and
               Tailwind CSS to build modern and clean user interfaces.
             </p>
-            <br />
+
             <p>
               I'm always learning new things to improve my skills and stay up to
               date with the latest web technologies. I like solving problems,
@@ -106,17 +106,66 @@
 
       <!-- Services -->
       <section id="Services">
-        <h2>Welcome to Services</h2>
+        <h2>What I Can Do For You</h2>
+        <div class="service_container">
+          <div class="services">
+            <i class="ri-layout-4-line"></i>
+            <div class="service_text">
+              <h3>Responsive Web Design</h3>
+              <p>
+                I create websites that look great on all devices - desktop,
+                tablet, and mobile.
+              </p>
+            </div>
+          </div>
+
+          <div class="services">
+            <i class="ri-code-s-slash-line"></i>
+            <div class="service_text">
+              <h3>Frontend Development</h3>
+              <p>
+                I build user interfaces using HTML, CSS, JavaScript, React.js,
+                and Tailwind CSS.
+              </p>
+            </div>
+          </div>
+
+          <div class="services">
+            <i class="ri-database-2-line"></i>
+            <div class="service_text">
+              <h3>State Management</h3>
+              <p>
+                I use Redux to manage complex state in large React applications
+                smoothly.
+              </p>
+            </div>
+          </div>
+
+          <div class="services">
+            <i class="ri-plug-line"></i>
+            <div class="service_text">
+              <h3>API Integration</h3>
+              <p>
+                I connect web apps to external APIs and handle data fetching,
+                display, and error handling.
+              </p>
+            </div>
+          </div>
+        </div>
       </section>
 
       <!-- Projects -->
       <section id="Projects">
-        <h2>My Projects</h2>
+        <h2>Featured Projects</h2>
         <div class="projects_container">
           <!-- card -->
           <div class="projects_card">
             <div class="card_img_container">
-              <img class="card_img" src="images/recipe-d.png" alt="" />
+              <img
+                class="card_img"
+                src="https://img-cdn.inc.com/image/upload/f_webp,q_auto,c_fit/images/panoramic/getty_488892667_9707249704500122_95943.jpg"
+                alt=""
+              />
               <div class="card_link">
                 <a href="#" target="_blank" rel="noopener noreferrer">
                   <i class="ri-arrow-right-up-line"></i>
@@ -140,7 +189,11 @@
 
           <div class="projects_card">
             <div class="card_img_container">
-              <img class="card_img" src="images/recipe-d.png" alt="" />
+              <img
+                class="card_img"
+                src="https://www.simplilearn.com/ice9/free_resources_article_thumb/What_Is_a_Project.jpg"
+                alt=""
+              />
               <div class="card_link">
                 <a href="#" target="_blank" rel="noopener noreferrer"
                   ><i class="ri-arrow-right-up-line"></i
@@ -164,7 +217,11 @@
 
           <div class="projects_card">
             <div class="card_img_container">
-              <img class="card_img" src="images/recipe-d.png" alt="" />
+              <img
+                class="card_img"
+                src="https://miro.medium.com/v2/resize:fit:1400/1*vbVPr3brcmImEQh0cckBOw.jpeg"
+                alt=""
+              />
               <div class="card_link">
                 <a href="#" target="_blank" rel="noopener noreferrer"
                   ><i class="ri-arrow-right-up-line"></i
@@ -188,7 +245,11 @@
 
           <div class="projects_card">
             <div class="card_img_container">
-              <img class="card_img" src="images/recipe-d.png" alt="" />
+              <img
+                class="card_img"
+                src="https://emeritus.org/in/wp-content/uploads/sites/3/2022/03/What-is-project-management-Meaning-and-Definition-of-Project-Management-1.jpg.optimal.jpg"
+                alt=""
+              />
               <div class="card_link">
                 <a href="#" target="_blank" rel="noopener noreferrer"
                   ><i class="ri-arrow-right-up-line"></i
@@ -214,9 +275,106 @@
 
       <!-- Contact -->
       <section id="Contact">
-        <h2>Welcome to Contact</h2>
+        <h2>Let's Build Something Together</h2>
+        <h3>
+          Have a question or want to work together? Feel free to contact me!
+        </h3>
+        <div class="contact_container">
+          <!-- left -->
+          <div class="contact_left">
+            <div class="contact_content">
+              <i class="ri-mail-line"></i>
+              <div class="contact_text">
+                <h3>Email</h3>
+                <p>farhansadik0760@gamil.com</p>
+              </div>
+            </div>
+
+            <div class="contact_content">
+              <i class="ri-phone-fill"></i>
+              <div class="contact_text">
+                <h3>Phone</h3>
+                <p>+880 1703 202276</p>
+              </div>
+            </div>
+
+            <div class="contact_content">
+              <i class="ri-map-pin-2-line"></i>
+              <div class="contact_text">
+                <h3>Location</h3>
+                <p>Khulna, Bangladesh</p>
+              </div>
+            </div>
+          </div>
+          <div class="contact_right">
+            <form action="">
+              <div class="input_wrapper">
+                <span>
+                  <label for="name">Name</label>
+                  <input required type="text" id="name" placeholder="Your name"
+                /></span>
+
+                <span>
+                  <label for="email">Email</label>
+                  <input
+                    required
+                    type="text"
+                    id="email"
+                    placeholder="Your email"
+                /></span>
+              </div>
+
+              <label for="subject">Subject</label>
+              <input
+                required
+                type="text"
+                id="subject"
+                placeholder="Enter subject"
+              />
+
+              <label for="massage">Massage</label>
+              <textarea
+                required
+                name="massage"
+                id="massage"
+                placeholder="Enter your massage"
+                rows="5"
+              ></textarea>
+
+              <input class="btn" type="submit" value="Send Massage" />
+            </form>
+          </div>
+        </div>
       </section>
     </main>
+
+    <!-- Footer -->
+    <footer>
+      <div class="footer_container">
+        <div class="footer_left">
+          <h2>Who I Am</h2>
+          <p>
+            I am Farhan Sadik - Frontend Developer focused on creating modern,
+            responsive web experiences.
+          </p>
+        </div>
+
+        <div class="footer_right">
+          <h2>Reach Out</h2>
+          <div class="footer_links">
+            <a href=""> <i class="ri-github-line"></i></a>
+
+            <a href=""> <i class="ri-linkedin-fill"></i></a>
+
+            <a href=""> <i class="ri-facebook-fill"></i></a>
+          </div>
+        </div>
+      </div>
+      <div class="footer_bottom">
+        <hr />
+        <p>&copy; 2025 Farhan Sadik. All rights reserved.</p>
+      </div>
+    </footer>
 
     <script src="app.js"></script>
   </body>
