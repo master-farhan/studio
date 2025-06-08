@@ -306,21 +306,26 @@ main {
 }
 .services {
   background: var(--bg-2);
-  padding: 20px;
+  padding: 10px;
   width: 100%;
   border-radius: 10px;
   display: flex;
-  gap: 20px;
+  align-items: center;
+  /* flex-direction: column; */
+  gap: 10px;
 }
 .services i {
-  font-size: 100px;
+  font-size: 80px;
 }
 
 .service_text h3 {
-  padding: 10px 0;
-  font-size: 1.7rem;
+  font-size: 1.2rem;
+  padding-bottom: 10px;
   letter-spacing: 1px;
   text-align: start;
+}
+.service_text p {
+  font-size: 1rem;
 }
 
 /* Services Media */
@@ -330,7 +335,10 @@ main {
     flex-wrap: wrap;
   }
   .services {
-    width: 49%;
+    width: 48.9%;
+  }
+  .service_text h3 {
+    font-size: 1.7rem;
   }
 }
 
