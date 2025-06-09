@@ -11,8 +11,30 @@
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
+    <!-- header -->
     <header>
-      <nav></nav>
+      <nav>
+        <!-- <div class="logo">Farhan.Dev</div> -->
+        <div class="nav_controler">
+          <div class="dark">
+            <i class="moon ri-moon-fill"></i>
+            <i class="sun ri-sun-line"></i>
+          </div>
+          <div class="menu_item">
+            <i class="menu ri-menu-line"></i>
+            <i class="close ri-close-line"></i>
+          </div>
+        </div>
+
+        <!-- link -->
+        <div class="nav_link">
+          <a href="#Home">Home</a>
+          <a href="#About">About</a>
+          <a href="#Services">Services</a>
+          <a href="#Projects">Projects</a>
+          <a href="#Contact">Contact</a>
+        </div>
+      </nav>
     </header>
 
     <main>
@@ -82,22 +104,55 @@
               <div class="skill_card">
                 <h4>HTML & CSS</h4>
                 <div class="skill_line"><span>87%</span></div>
+
+                <p class="details">
+                  Built multiple responsive websites using semantic HTML5 and
+                  modern CSS3. Proficient in Flexbox, Grid, and media queries.
+                  Skilled in crafting clean, accessible, and
+                  cross-browser-compatible layouts. Experienced with BEM and CSS
+                  transitions/animations.
+                </p>
               </div>
               <div class="skill_card">
                 <h4>JavaScript</h4>
                 <div class="skill_line skill_line2"><span>73%</span></div>
+                <p class="details">
+                  Solid understanding of core JavaScript concepts including
+                  ES6+, DOM manipulation, and asynchronous programming. Built
+                  interactive features like sliders, form validation, and API
+                  data rendering. Familiar with fetch, async/await, and browser
+                  events.
+                </p>
               </div>
               <div class="skill_card">
                 <h4>React.js</h4>
                 <div class="skill_line skill_line3"><span>59%</span></div>
+                <p class="details">
+                  Built dynamic web components using React. Comfortable with
+                  props, state, hooks (useState, useEffect), and JSX. Created
+                  reusable components and managed component trees in small to
+                  medium-sized projects.
+                </p>
               </div>
               <div class="skill_card">
                 <h4>Redux</h4>
                 <div class="skill_line skill_line4"><span>46%</span></div>
+                <p class="details">
+                  Basic understanding of Redux concepts like actions, reducers,
+                  and the store. Implemented global state management in small
+                  React apps. Currently learning Redux Toolkit for more scalable
+                  applications.
+                </p>
               </div>
               <div class="skill_card">
                 <h4>Tailwind CSS</h4>
                 <div class="skill_line skill_line5"><span>91%</span></div>
+                <p class="details">
+                  Designed modern and fully responsive UIs using Tailwind CSS
+                  utility classes. Experienced in customizing themes, using
+                  variants, and building layouts efficiently. Familiar with dark
+                  mode, animations, and component composition.
+                </p>
               </div>
             </div>
           </div>
@@ -113,10 +168,17 @@
               <i class="ri-layout-4-line"></i>
               <div class="service_text">
                 <h3>Responsive Web Design</h3>
-                <p>
-                  I create websites that look great on all devices - desktop,
-                  tablet, and mobile.
-                </p>
+                <h4>I create websites that look great on all devices:</h4>
+                <ul>
+                  <li>Mobile-first design approach using media queries</li>
+                  <li>Tested across multiple screen sizes and browsers</li>
+                  <li>
+                    Uses flexible layouts and responsive units (%, vh, vw, rem)
+                  </li>
+                  <li>
+                    Ensures accessibility and clean UI/UX on all platforms
+                  </li>
+                </ul>
               </div>
             </div>
 
@@ -124,10 +186,15 @@
               <i class="ri-code-s-slash-line"></i>
               <div class="service_text">
                 <h3>Frontend Development</h3>
-                <p>
-                  I build user interfaces using HTML, CSS, JavaScript, React.js,
-                  and Tailwind CSS.
-                </p>
+                <h4>I build user interfaces with modern frontend touls:</h4>
+                <ul>
+                  <li>
+                    Strong foundation in HTML5, CSS3, and JavaScript (ES6+)
+                  </li>
+                  <li>Skilled in React.js component-based development</li>
+                  <li>Styled UIs with Tailwind CSS and custom SCSS</li>
+                  <li>Reusable and scalable code structure for performance</li>
+                </ul>
               </div>
             </div>
           </div>
@@ -137,10 +204,20 @@
               <i class="ri-database-2-line"></i>
               <div class="service_text">
                 <h3>State Management</h3>
-                <p>
-                  I use Redux to manage complex state in large React
-                  applications smoothly.
-                </p>
+                <h4>
+                  I use Redux to manage complex state in React applications:
+                </h4>
+                <ul>
+                  <li>
+                    Familiar with Redux core concepts (actions, reducers, store)
+                  </li>
+                  <li>Integrated Redux with middleware like redux-thunk</li>
+                  <li>
+                    Experience with Redux Toulkit for simpler setup and
+                    performance
+                  </li>
+                  <li>Maintains predictable and debuggable app state</li>
+                </ul>
               </div>
             </div>
 
@@ -148,10 +225,18 @@
               <i class="ri-plug-line"></i>
               <div class="service_text">
                 <h3>API Integration</h3>
-                <p>
-                  I connect web apps to external APIs and handle data fetching,
-                  display, and error handling.
-                </p>
+                <h4>
+                  I connect web apps to external APIs and manage data
+                  effectively:
+                </h4>
+                <ul>
+                  <li>Fetch data using fetch() and axios</li>
+                  <li>Handle loading, success, and error states</li>
+                  <li>Display dynamic content based on API responses</li>
+                  <li>
+                    Implement pagination, filtering, and search functionality
+                  </li>
+                </ul>
               </div>
             </div>
           </div>
@@ -167,14 +252,22 @@
             <div class="card_img_container">
               <img
                 class="card_img"
-                src="https://img-cdn.inc.com/image/upload/f_webp,q_auto,c_fit/images/panoramic/getty_488892667_9707249704500122_95943.jpg"
-                alt=""
+                src="images/recipe_pro.png"
+                alt="Code & Cook project screenshot"
               />
               <div class="card_link">
-                <a href="#" target="_blank" rel="noopener noreferrer">
+                <a
+                  href="https://master-farhan.github.io/recipe/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
                   <i class="ri-arrow-right-up-line"></i>
                 </a>
-                <a href="#" target="_blank" rel="noopener noreferrer">
+                <a
+                  href="https://github.com/master-farhan/recipe"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
                   <i class="ri-github-line"></i>
                 </a>
               </div>
@@ -182,10 +275,12 @@
             <div class="card_text">
               <h3>Code & Cook</h3>
               <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil
-                fugit eligendi ducimus labore! Nesciunt illo blanditiis laborum
-                ratione inventore omnis consequuntur temporibus sapiente vel
-                repudiandae, quibusdam quod provident ex minus.
+                Code & Cook is a modern web application that combines coding
+                tutorials with interactive recipe guides. Built with React JS
+                and styled using Tailwind CSS, it provides a clean and
+                responsive interface. Users can explore recipes while learning
+                the logic behind each step, making it ideal for tech-savvy food
+                lovers.
               </p>
               <p><span>React JS</span> <span>Tailwind CSS</span></p>
             </div>

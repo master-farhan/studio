@@ -1,17 +1,17 @@
 :root {
   --text: #ead9ff;
-  --text-2: #ead9ff;
-  --primary: #026ca1;
+  --primary: #0a88c7;
   --bg: #16171f;
-  --bg-2: #1c1d36;
+  --bg-2: #27284e;
   --red: #f00;
 }
 
-/* body.dark {
-  --bg: #444;   
-  --text: #f3ebeb;
-  --bg-2: #626161;
-} */
+body.darkMood {
+  --bg: #ead9ff;   
+  --text: #16171f;
+  --bg-2: #d6cbf5;
+  --primary: #7056ff;
+}
 
 @font-face {
   font-family: "Aeonik";
@@ -118,6 +118,117 @@ section h2 {
     /* color: var(--text); */
   }
 }
+
+/* Header -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------> */
+
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  z-index: 9999999999999999;
+  padding-right: 17px;
+}
+nav {
+  position: relative;
+  padding: 20px 4vw;
+  /* background: #1534ff28; */
+  height: 100%;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: end;
+}
+.nav_controler {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  position: relative;
+}
+
+.dark,
+.menu_item {
+  position: relative;
+  transition: all 0.3s;
+  cursor: pointer;
+  border-radius: 20px;
+}
+
+.dark:hover {
+  rotate: -20deg;
+}
+.moon,
+.sun,
+.menu,
+.close {
+  border: 1px solid var(--bg-2);
+  border-radius: 50px;
+  background: var(--bg-2);
+  padding: 10px;
+  opacity: 1;
+  box-shadow: 0 0 10px var(--bg-2);
+  pointer-events: all;
+  transition: all .5s;
+}
+.dark:active,
+.menu_item:active {
+  scale: 0.95;
+}
+
+.moon,
+.close {
+  position: absolute;
+  top: -45%;
+  right: 0;
+  opacity: 0;
+  pointer-events: none;
+}
+
+/* nav link */
+.nav_link {
+  position: absolute;
+  top: 70px;
+  right: 0;
+  padding: 10px 4vw;
+  display: flex;
+  flex-direction: column;
+  /* gap: 10px; */
+  overflow: hidden;
+  max-height: 0; /* height */
+  transition: all 0.5s;
+}
+
+.nav_link a {
+  padding: 10px 20px;
+  background: var(--bg-2);
+  border-radius: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 10px;
+  border: 1px solid var(--primary);
+}
+.nav_link a:hover {
+  box-shadow: 0 0 10px var(--primary);
+}
+
+/* Header Media */
+@media (min-width: 1020px) {
+  nav {
+    padding: 35px 4vw 15px;
+  }
+  .nav_controler {
+    gap: 30px;
+  }
+
+  .nav_link {
+    top: 90px;
+  }
+  .nav_link a {
+    padding: 15px 30px;
+  }
+}
+
 /* main --------------------------------------> */
 main {
   position: relative;
@@ -238,7 +349,18 @@ main {
   padding: 21px 25px;
   background: var(--bg-2);
   border-radius: 10px;
+  max-height: 80px;
+  overflow: hidden;
+  transition: max-height 0.6s ease;
 }
+.skill_card:hover {
+  max-height: 300px;
+}
+
+.skill_card .details {
+  padding-top: 25px;
+}
+
 .skill_card h4 {
   font-size: 1.3rem;
   padding: 0 0 15px;
@@ -277,6 +399,9 @@ main {
   .about_container {
     flex-direction: row;
   }
+  .skill_card {
+    max-height: 85px;
+  }
   .about_left {
     padding-right: 30px;
   }
@@ -303,7 +428,7 @@ main {
   align-items: center;
   justify-content: space-between;
   flex-direction: column;
-  gap: 20px;
+  gap: 30px;
   padding-top: 30px;
 }
 .s_s,
@@ -313,19 +438,20 @@ main {
   align-items: center;
   justify-content: space-between;
   flex-direction: column;
-  gap: 20px;
+  gap: 30px;
 }
 .services {
   background: var(--bg-2);
-  padding: 10px;
+  padding: 10px 10px 10px 20px;
   width: 100%;
   border-radius: 10px;
   display: flex;
-  align-items: center;
-  gap: 10px;
+  align-items: start;
+  flex-direction: column;
+  gap: 20px;
 }
 .services i {
-  font-size: 80px;
+  font-size: 50px;
 }
 
 .service_text h3 {
@@ -334,8 +460,13 @@ main {
   letter-spacing: 1px;
   text-align: start;
 }
-.service_text p {
-  font-size: 1rem;
+.service_text h4 {
+  font-size: 1.1rem;
+}
+
+.services ul {
+  padding-left: 19px;
+  margin-top: 10px;
 }
 
 /* Services Media */
@@ -343,8 +474,18 @@ main {
   .service_container {
     flex-direction: row;
   }
+  .services {
+    flex-direction: row;
+    align-items: center;
+  }
+  .services i {
+    font-size: 80px;
+  }
   .service_text h3 {
     font-size: 1.7rem;
+  }
+  .service_text h3 {
+    font-size: 1.5rem;
   }
 }
 
@@ -390,7 +531,7 @@ main {
 
 .card_img {
   width: 100%;
-  aspect-ratio: 16/9;
+  aspect-ratio: 16/10;
   object-fit: cover;
   opacity: 1;
   transition: all 0.3s;
